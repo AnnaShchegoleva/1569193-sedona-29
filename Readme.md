@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Щеголева Анна](https://up.htmlacademy.ru/htmlcss/29/user/1569193).
-* Наставник: `Антон Попов`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
