@@ -1,0 +1,251 @@
+/*Variables*/
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-grey: #CACACA;
+  --basic-middle-grey: #BDBBBC;
+  --basic-light-grey: #00f2f2;
+  --basic-extra-light--grey: #EBEBEB;
+  --basic-extra-grey: #0c0609;
+  --basic-dark-grey: #a9a9a9;
+  --basic-extra-dark-grey: #666666;
+  --basic-blue: #81b3d2;
+  --basic-darker-blue: #669ec0;
+  --basic-darkest-blue: #5496bd;
+  --basic-neutral: #EEEEEE;
+  --basic-brown: #766357;
+  --basic-darker-brown: #604e43;
+  --basic-darkest-brown: #503e33;
+
+  --special-extra-dark: #231f20;
+
+  --opacity-white: rgba(255, 255, 255, 0.9);
+  --opacity-white-button: rgba(255, 255, 255, 0.3);
+  --opacity-black: rgba(0, 0, 0, 0.3);
+}
+
+/*Global*/
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  /*background-image: url(../img/background_photo.png); в html ?*/
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+}
+
+/* Features */
+
+.features {
+  text-align: center;
+}
+
+.feature-main {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feature-main-item {
+  font-size: 14px;
+  line-height: 26px;
+
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list > li:nth-child(-n+2) {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.features-list > li:nth-child(n+3) {
+  background-color: var(--basic-neutral);
+}
+
+.features-list dl {
+  background-color: white;
+  color: var(--basic-black);
+}
+
+.features-list-addition dt,
+.features-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.features-item p,
+.features-list-addition dd {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.container-picture {
+  background-color: var(--basic-darkest-blue);
+}
+
+.search-hotels p {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.search-hotels-info:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-brown {
+  background-color: var(--basic-brown);
+}
+
+.button-brown:hover {
+  background-color: var(--basic-darker-brown);
+}
+
+.button-brown:active {
+  background-color: var(--basic-darkest-brown);
+  color: var(--opacity-white-button); /*Нк работает*/
+}
+
+
+/* Main footer */
+
+.page-footer.main-footer {
+  color: var(--basic-black);
+  background-color: var(--opacity-white);
+}
+
+.contact-footer {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.contact-phone {
+  color: inherit;
+}
+
+/*Social network*/
+
+.footer-social li {
+  list-style: none;
+}
+
+.footer-social {
+  /*text-align: center;*/
+  align-items: center;
+}
+
+.footer-social li {
+  display: inline;
+}
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
+  text-align: center;
+}
+
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-darker-blue);
+}
+
+.social-button:active {
+  background-color: var(--basic-darkest-blue);
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+
+}
+
+.academy-logo-button {
+  color: var(--special-extra-dark);
+}
+
+/* Не работает
+.academy-logo-button:hover,
+.academy-logo-button:focus {
+  color: var(--basic-blue);
+}
+
+.academy-logo-button:active {
+  color: var(--basic-middle-grey);
+}
+*/
+
+/*Форма поиска гостиницы*/
+.popup-dates {
+  height: 395px;
+  width: 568px;
+  background-color: var(--basic-white);
+  border: solid 2px #231f20; /*Для визуализации размеров*/
+}
+
+.form-search-hotels {
+
+}
