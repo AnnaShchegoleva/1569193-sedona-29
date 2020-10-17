@@ -436,8 +436,11 @@ p.search-hotels-info {
 .page-footer.main-footer {
   color: var(--basic-black);
   background-color: var(--opacity-white);
-  display: flex;
 
+}
+.page-footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .contacts {
@@ -457,41 +460,29 @@ p.search-hotels-info {
 }
 
 /*Social network*/
-.socials  {
+.socials {
+  justify-self: center;
+  text-align: center;
   display: flex;
-  align-items: center;;
+  flex-wrap: wrap;
+  width: 170px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social-link {
-  position: relative;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   width: 46px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 5px;
+
   }
 
-.social-link .tw::before {
-  content: "";
-  background: url("/img/twitter.svg") no-repeat;
-  position: relative;
-  }
-
-.social-link .fb::before {
-  content: "";
-  background: url("/img/fb-icon.svg") no-repeat;
-  position: relative;
+.social-link svg {
 
 }
 
-.social-link .yt::before {
-  content: "";
-  background: url("/img/youtube.svg") no-repeat;
-  position: relative;
-}
 .social-link:hover,
 .social-link:focus {
   background-color: var(--basic-darker-blue);
@@ -501,24 +492,8 @@ p.search-hotels-info {
   background-color: var(--basic-darkest-blue);
 }
 
-.tw {
-  content: url("../img/twitter.svg");
-  position: relative;
-/*  background-repeat: no-repeat;
-  background-position: center;*/
-
-}
-
-.fb {
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.yt {
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.social-link:active path {
+  fill: var(--opacity-white-button);
 }
 
 .copyright {
@@ -528,8 +503,13 @@ p.search-hotels-info {
 
 }
 
-.academy-logo-button {
-  color: var(--special-extra-dark);
+.academy-logo-button:hover path,
+.academy-logo-button:focus path{
+  fill: var(--basic-blue);
+}
+
+.academy-logo-button:active path {
+  fill: var(--basic-middle-grey);
 }
 
 /* Не работает
