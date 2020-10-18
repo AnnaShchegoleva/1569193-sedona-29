@@ -48,7 +48,7 @@ img {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  display: none;
   margin: 0;
 }
 
@@ -83,6 +83,10 @@ img {
 .site-navigation-link:focus {
   color: var(--basic-blue);
 }
+
+.site-navigation-link:active {
+  color: var(--opacity-black);
+  }
 
 /*Promotion*/
 
@@ -471,17 +475,19 @@ p.search-hotels-info {
 }
 
 .social-link {
+  display: flex;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   width: 46px;
   height: 48px;
   margin: 5px;
-
+  align-items: center;
+  justify-content: center;
   }
 
-.social-link svg {
-
-}
+/*.social-link svg {
+  display: block;
+}*/
 
 .social-link:hover,
 .social-link:focus {
