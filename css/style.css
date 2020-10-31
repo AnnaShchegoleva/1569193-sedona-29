@@ -38,6 +38,24 @@ body {
    background-color: var(--basic-light-grey);
 }
 
+.page {
+height: 100%;
+}
+
+
+/*.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+Растянем body по высоте страницы.
+
+Зададим сетку для страницы: шапка занимает высоту по своему контенту,
+как и подвал, а контентная часть занимает всё возможное пространство.
+Так добиваемся того, чтобы подвал прилип к низу страницы.*/
+
+
 a {
   text-decoration: none;
 }
@@ -48,8 +66,13 @@ img {
 }
 
 .visually-hidden {
-  display: none;
-  margin: 0;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .page-wrapper {
@@ -59,22 +82,56 @@ img {
   box-shadow: 5px 5px 8px var(--opacity-black), -5px 5px 8px var(--opacity-black);
 }
 
+/*End Global*/
+
+/*Header*/
+
 /* Main navigation */
 
+.logo {
+  position: absolute;
+  left: 531px;
+  height: 70px;
+}
+
 .main-navigation {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
   list-style: none;
   padding: 0;
   margin: 0;
+  height: 56px;
+  width: 100%;
 }
 
+.site-navigation-item {
+  text-align: center;
+  align-self: center;
+}
 
-/* User navigation */
+.nav-info {
+  grid-column: 1/2;
+}
+
+.nav-photos {
+  grid-column: 2/3;
+}
+
+.nav-map-menu {
+  grid-column: 4/5;
+}
+
+.nav-hotels-menu {
+  grid-column: 5/6;
+}
+
 .site-navigation-link {
   color: var(--basic-black);
 }
@@ -86,7 +143,8 @@ img {
 
 .site-navigation-link:active {
   color: var(--opacity-black);
-  }
+}
+/*End Nav | End Header*/
 
 /*Promotion*/
 
@@ -97,44 +155,67 @@ img {
 /*promo background image*/
 
 .main-wrap-background-img {
-  background-image: url(../img/background_photo.png);
-  background-repeat: no-repeat;
-  /*background-position: 0 56px;*/
-  background-position: center;
+  background: url("../img/shape.svg") no-repeat bottom, url(../img/background_photo.png) no-repeat center;
   min-height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+/*End Promo*/
 
 /* Features */
 
+/*Banner*/
 .features {
   text-align: center;
 }
 
-.feature-main {
+.feature-main-wrapper {
+  padding: 52px;
+  margin: 0;
+}
+
+p.feature-main {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
 }
 
 .feature-main-text {
   font-size: 14px;
   line-height: 26px;
+  margin: 52px 0 0 0;
 }
 
-p.feature-main,
-p.feature-main-text {
-  margin: 0;
-}
+/*End of banner*/
+
+/*Feature list*/
 
 .features-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 586px 256px 256px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.image-wrap {
+  background-color: var(--basic-darkest-blue);
+}
+
+.image-wrap img {
+  display: block;
+}
+
+/* N1 */
+.n1 {
+  grid-area: 1/1/2/-1;
+  display: grid;
+  grid-template-rows: 256px 330px;
+  grid-template-columns: 400px 400px 400px;
+  }
 
 .blue-bg {
   background-color: var(--basic-blue);
@@ -145,11 +226,56 @@ p.feature-main-text {
   background-color: var(--basic-neutral);
 }
 
-.features-list dl {
+/* N1 */
+
+.n1 .features-item-info {
+  grid-column: 1/2;
+}
+
+.pic1 {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.features-list-addition {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.list-add {
+  display: flex;
+  justify-content: space-around;
   background-color: white;
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+.list-add > div {
+  /*padding-top: 72px;*/
+  /*padding-bottom: 72px;*/
+}
+
+.house {
+  background: url("../img/icon-1.png") no-repeat center;
+  width: 75px;
+  height: 72px;
+  display: inline-block;
+}
+
+.food {
+  background: url("../img/icon-2.png") no-repeat center;
+  width: 75px;
+  height: 70px;
+  display: inline-block;
+}
+
+.souvenirs {
+  background: url("../img/icon-3.png") no-repeat center;
+  width: 64px;
+  height: 77px;
+  display: inline-block;
 }
 
 .features-list-addition dt,
@@ -169,22 +295,35 @@ p.feature-main-text {
   padding: 0;
 }
 
-.house {
-  background-image: url("/../img/icon-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 75px;
-  height: 72px;
- /*background-color: rgba(0,0,0,0.5);*/
+
+/* End N1 */
+
+/* N2 */
+
+.n2 {
+  grid-area: 2/1/3/-1;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
 }
 
-.image-wrap {
-  background-color: var(--basic-darkest-blue);
-  }
-
-.image-wrap img {
-display: block;
+.n2 .features-item-info {
+  grid-column: -1/-2;
 }
+
+.pic2 {
+  position: absolute;
+  grid-column: 1/3;
+}
+
+
+p.features-item-number {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+/* End n2*/
+/* End Features*/
+
 
 /*search Hotels*/
 .search-hotels-wrap {
@@ -303,23 +442,6 @@ p.search-hotels-info {
 .filter {
   /*color: var(--basic-white); для видимости*/
   line-height: 21px;
-}
-
-.filter-form {
-
-}
-
-.filter-infrastructure,
-.filter-houses,
-.filter-price {
-  font-weight: bold;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-}
-
-
-.wrap-image-checkbox {
   background-image: url("../img/background-filter.jpg");
   width: 1200px;
   height: 217px;
@@ -327,7 +449,65 @@ p.search-hotels-info {
   background-position: center;
 }
 
+input[type="checkbox"] {
+  display: none;
+
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-form label::before {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #FFFFFF;
+  top: 0;
+  left: -44px;
+  content: "";
+}
+
+.filter-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-form fieldset {
+  margin-top: 26px;
+  height: 145px;
+  border: none;
+  color: var(--basic-white);
+  font-weight: normal;
+  }
+
+.filter-infrastructure,
+.filter-houses,
+.filter-price {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+}
+
+.filter-attribute-title {
+  font-weight: 700;
+}
+
+.filter-infrastructure {
+  margin-left: 72px;
+}
+.filter-price {
+  margin-right: 72px;
+}
 /*Search results*/
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
 
 .search-amount {
   font-size: 21px;
