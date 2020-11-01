@@ -243,6 +243,8 @@ p.feature-main {
 
 .grey-bg {
   background-color: var(--basic-neutral);
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
 /* N1 */
@@ -257,14 +259,13 @@ p.feature-main {
 }
 
 .town {
-  margin: 47px 51px 59px 52px;
+  margin: 47px 51px 54px 52px;
 }
 
 p.features-item-number {
   padding-top: 25px;
   padding-bottom: 23px;
 }
-
 
 .features-list-addition {
   grid-column: 1/-1;
@@ -291,6 +292,7 @@ p.features-item-number {
   width: 75px;
   height: 72px;
   display: inline-block;
+  margin-top: 60px;
 }
 
 .food {
@@ -298,6 +300,7 @@ p.features-item-number {
   width: 75px;
   height: 70px;
   display: inline-block;
+  margin-top: 61px;
 }
 
 .souvenirs {
@@ -305,8 +308,13 @@ p.features-item-number {
   width: 64px;
   height: 77px;
   display: inline-block;
+  margin-top: 55px;
 }
 
+dt.feature-add-title {
+  padding-top: 28px;
+  padding-bottom: 25px;
+}
 
 /* End N1 */
 
@@ -328,7 +336,7 @@ p.features-item-number {
 }
 
 .bridge {
-  margin: 50px 49px 56px 50px;
+  margin: 50px 49px 51px 50px;
 }
 
 /* End n2*/
@@ -347,6 +355,12 @@ p.features-item-number {
   margin: 0;
 }
 
+.search-hotels {
+  margin-top: 58px ;
+  margin-bottom: 78px;
+  pos
+}
+
 .search-hotels-title {
   font-weight: bold;
 }
@@ -354,6 +368,7 @@ p.features-item-number {
 p.search-hotels-info {
   font-size: 14px;
   line-height: 24px;
+  padding-top: 37px;
 }
 
 .popup p {
