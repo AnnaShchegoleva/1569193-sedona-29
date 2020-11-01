@@ -356,17 +356,150 @@ p.search-hotels-info {
 .popup {
   height: 395px;
   width: 568px;
+  position: absolute;
+  right: calc(50% - 284px);
   background-color: var(--basic-white);
-  border: solid 1px #231f20; /*Для визуализации размеров*/
-}
-
-.form-search-hotels {
 
 }
 
-.amount-person {
+.grid-container-popup {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto;
+  /*grid-template-rows: 38px 38px;*/
+  margin: 55px;
+  height: 285px;
 
+   /* row-gap: 29px;*!*/
 }
+
+.form-item-arrival-date {
+  position: relative;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 94px 346px;
+  align-items: center;
+  gap: 19px;
+  height: 40px;
+}
+
+
+.form-item-departure-date {
+  position: relative;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 94px 346px;
+  align-items: center;
+  gap: 19px;
+  height: 40px;
+}
+
+.form-item-adults {
+  position: relative;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 94px 94px;
+  align-items: center;
+  gap: 19px;
+  height: 40px;
+}
+
+
+.form-item-children {
+  grid-row: 3/4;
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: 94px 94px;
+  align-items: center;
+  gap: 19px;
+  height: 40px;
+}
+
+.arrival-date-cover {
+  grid-column: 1/2;
+}
+
+.arrival {
+  grid-column: 2/3;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.button-calendar {
+  position: absolute;
+  right: 1px;
+  top: 7px;
+  border: none;
+}
+
+.departure-date-cover {
+  grid-column: 1/2;
+}
+
+.departure {
+  grid-column: 2/-1;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+
+/*
+.adults-cover {
+  grid-row: 3/4;
+  grid-column:1/2;
+}
+
+.children-cover {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+*/
+
+.find { /*Кнопка Найти в popup окне*/
+  width: 100%;
+ position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.arrival,
+.departure {
+  height: 38px;
+  width: 346px;
+  border: none;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: var(--basic-light-grey);
+}
+
+
+.amount-person:hover path,
+.amount-person:focus path,
+.amount-person:hover rect,
+.amount-person:focus rect {
+  fill: var(--basic-black);
+}
+
+.amount-person:active path,
+.amount-person:active rect {
+  fill: var(--basic-blue);
+}
+
+.button-calendar:focus path,
+.button-calendar:hover path{
+  fill: var(--basic-black);
+}
+
+.button-calendar:active path {
+  fill: var(--basic-blue);
+}
+
 
 
 /*Buttons*/
@@ -427,9 +560,6 @@ p.search-hotels-info {
   height: 27px;
 }
 
-.button-calendar {
-
-}
 
 /*Map*/
 
