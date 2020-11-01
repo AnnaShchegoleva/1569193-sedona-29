@@ -210,6 +210,25 @@ p.feature-main {
 }
 
 /* N1 */
+
+.features-list-addition dt,
+.features-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.features-item p,
+.features-list-addition dd {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+
 .n1 {
   grid-area: 1/1/2/-1;
   display: grid;
@@ -236,6 +255,16 @@ p.feature-main {
   grid-column: 2/-1;
   grid-row: 1/2;
 }
+
+.town {
+  margin: 47px 51px 59px 52px;
+}
+
+p.features-item-number {
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
+
 
 .features-list-addition {
   grid-column: 1/-1;
@@ -278,23 +307,6 @@ p.feature-main {
   display: inline-block;
 }
 
-.features-list-addition dt,
-.features-item h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.features-item p,
-.features-list-addition dd {
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  padding: 0;
-}
-
 
 /* End N1 */
 
@@ -315,10 +327,8 @@ p.feature-main {
   grid-column: 1/3;
 }
 
-
-p.features-item-number {
-  padding-top: 31px;
-  padding-bottom: 36px;
+.bridge {
+  margin: 50px 49px 56px 50px;
 }
 
 /* End n2*/
