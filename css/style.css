@@ -369,10 +369,7 @@ p.search-hotels-info {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 30px;
-<<<<<<< HEAD
-  margin-top: 0px;
-=======
->>>>>>> acc83bc3b78d21c8ca4917d3ddf6651d931a6d6a
+  margin-top: 0;
  }
 
 .popup p {
@@ -712,7 +709,7 @@ footer {
 .academy-logo-button:active {
   color: var(--basic-middle-grey);
 }
-*/
+
 
 
 
