@@ -144,6 +144,11 @@ img {
 .site-navigation-link:active {
   color: var(--opacity-black);
 }
+
+.current {
+  color: var(--basic-brown);
+}
+
 /*End Nav | End Header*/
 
 /*Promotion*/
@@ -364,6 +369,7 @@ p.search-hotels-info {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 30px;
+  margin-top: 0px;
  }
 
 .popup p {
