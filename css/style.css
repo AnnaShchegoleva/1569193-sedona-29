@@ -624,20 +624,25 @@ p.departure-date {
 
 }
 
+.contacts p,
+.phone {
+  margin: 0;
+}
+
 .contacts {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: inherit;
+  margin-left: 111px;
+}
+
+.contacts p {
+  text-align: center;
 }
 
 .phone {
   color: inherit;
-}
-
-.contacts p,
-.phone {
-  margin: 0;
 }
 
 /*Social network*/
@@ -693,7 +698,7 @@ p.departure-date {
 
 .tw:hover,
 .fb:hover,
-.youtube:hover
+.youtube:hover,
 .tw:focus,
 .fb:focus,
 .youtube:focus {
@@ -749,7 +754,6 @@ p.departure-date {
 /*Hotels filter search*/
 
 .filter {
-  /*color: var(--basic-white); для видимости*/
   line-height: 21px;
   background-image: url("../img/background-filter.jpg");
   width: 1200px;
@@ -820,21 +824,58 @@ label {
 }
 /*Search results*/
 
+.search-results {
+
+}
+
+.image-wrap-hotel {
+  margin-right: 29px;
+  }
+
+.image-wrap-hotel img {
+  display: inline-flex;
+}
+
+.left-side {
+  margin-right: 6px;
+}
+
 .sorting {
   display: flex;
-  justify-content: space-between;
+  padding: 0 72px;
+  align-items: center;
 }
 
 .search-amount {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin: 0;
-}
+  margin: 0 46px 0 0;
+ }
 
 .sorting-list li,
 .sorting-rating li {
   list-style: none;
+}
+
+.sorting-text {
+  margin-right: 40px;
+}
+
+.sorting-list {
+  display: flex;
+}
+
+.sorting-rating {
+display: flex;
+}
+
+.sorting-item-price {
+ margin-right: 32px;
+}
+
+.sorting-item-type {
+  margin-right: 33px;
 }
 
 .sorting-text,
@@ -864,9 +905,30 @@ label {
   list-style: none;
 }
 
+.hotels-list-item {
+  padding: 30px 72px;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 1px solid var(--basic-grey-border);
+}
+
+.hotels-list-item:first-child {
+  border-top: 1px solid var(--basic-grey-border);
+}
+
+.hotel-info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
 .hotels-list {
   padding: 0;
   margin: 0;
+}
+
+.hotel-info-title {
+  width: 100%;
 }
 
 .hotel-title {
@@ -882,10 +944,11 @@ label {
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .rating {
-  margin: 0;
+  margin: 0 0 0 auto;
 }
 
 /*Button hotels*/

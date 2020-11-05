@@ -19,7 +19,7 @@
         <li class="site-navigation-item nav-info"><a class="site-navigation-link" href="#!">Информация</a></li>
         <li class="site-navigation-item nav-photos"><a class="site-navigation-link" href="#!">Фото и видео</a></li>
         <li class="site-navigation-item nav-map-menu"><a class="site-navigation-link" href="#!">Карта штата</a></li>
-        <li class="site-navigation-item nav-hotels-menu"><a class="current" href="hotels.html">Гостиницы</a></li>
+        <li class="site-navigation-item nav-hotels-menu"><a class="current">Гостиницы</a></li>
       </ul>
     </nav>
 
@@ -52,7 +52,7 @@
       </fieldset>
     </form>
   </section>
-  <section class="search results">
+  <section class="search-results">
     <section class="sorting">
       <h2 class="visually-hidden">Результаты поиска</h2> <!--будет скрыто-->
       <p class="search-amount">Найдено:
@@ -60,21 +60,29 @@
       </p>
       <p class="sorting-text">Сортировка:</p>
       <ul class="sorting-list">
-        <li class="sorting-item"><a>По цене</a></li> <!--active-->
-        <li class="sorting-item"><a>По типу</a></li>
-        <li class="sorting-item"><a>По рейтингу</a></li>
+        <li class="sorting-item-price"><a>По цене</a></li> <!--active-->
+        <li class="sorting-item-type"><a>По типу</a></li>
+        <li class="sorting-item-rating"><a>По рейтингу</a></li>
       </ul>
       <ul class="sorting-rating">
-        <li class="arrow">Стрелка вверх</li>
-        <li class="arrow">Стрелка вниз</li> <!--active-->
+        <li class="arrow up">Стрелка вверх
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+          </svg>
+        </li>
+        <li class="arrow down">Стрелка вниз
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+          </svg>
+        </li> <!--active-->
       </ul>
     </section>
 
       <ul class="hotels-list">
         <li class="hotels-list-item">
-           <div><img src="img/amara_resort.jpg" height="90" width="135" alt="Гостиница расположена у подножия горы"/></div>
+           <div class="image-wrap-hotel"><img src="img/amara_resort.jpg" height="90" width="135" alt="Гостиница расположена у подножия горы"/></div>
           <div class="hotel-info">
-            <a href="#!"><h3 class="hotel-title">Amara Resort & Spa</h3></a>
+            <a class="hotel-info-title" href="#!"><h3 class="hotel-title">Amara Resort & Spa</h3></a>
               <div class="left-side">
               <p class="hotel-type">Гостиница</p>
               <button class="button button-blue-hotel">Подробнее</button>
@@ -83,15 +91,16 @@
               <p class="price-hotel">От 4000 Р.</p>
               <button class="button button-brown-hotel">Забронировать</button>
             </div>
-            <div>
-              <p class="rating">****** Рейтинг:8.5</p>
             </div>
-          </div>
+          <div class="rating">
+            <div class="stars stars5">******</div>
+          <p class="rating-text">Рейтинг:8.5</p>
+        </div>
         </li>
-        <li>
-          <div><img src="img/desert_quail.jpg" height="90" width="135" alt="Небольшой мотель на 3 звезды с пустынным пейзажем"/></div>
+        <li class="hotels-list-item">
+          <div class="image-wrap-hotel"><img src="img/desert_quail.jpg" height="90" width="135" alt="Небольшой мотель на 3 звезды с пустынным пейзажем"/></div>
           <div class="hotel-info">
-            <a href="#!"><h3 class="hotel-title">Desert Quail Inn</h3></a>
+            <a class="hotel-info-title" href="#!"><h3 class="hotel-title">Desert Quail Inn</h3></a>
             <div class="left-side">
               <p class="hotel-type">Мотель</p>
               <button class="button button-blue-hotel">Подробнее</button>
@@ -100,15 +109,16 @@
               <p class="price-hotel">От 3000 Р.</p>
               <button class="button button-brown-hotel">Забронировать</button>
             </div>
-            <div>
-              <p class="rating">*** Рейтинг:8.9</p>
             </div>
-          </div>
+          <div class="rating">
+            <div class="stars stars3">***</div>
+          <p class="rating-text">Рейтинг:8.9</p>
+        </div>
         </li>
-        <li>
-          <div><img src="img/villas_poco.jpg" height="90" width="135" alt="Апартаменты в живописном месте с большим количеством деревьев и другой зелени"/></div>
+        <li class="hotels-list-item">
+          <div class="image-wrap-hotel"><img src="img/villas_poco.jpg" height="90" width="135" alt="Апартаменты в живописном месте с большим количеством деревьев и другой зелени"/></div>
           <div class="hotel-info">
-            <a href="#!"><h3 class="hotel-title">Villas at Poco Diablo</h3></a>
+            <a class="hotel-info-title" href="#!"><h3 class="hotel-title">Villas at Poco Diablo</h3></a>
             <div class="left-side">
               <p class="hotel-type">Апартаменты</p>
               <button class="button button-blue-hotel">Подробнее</button>
@@ -117,9 +127,10 @@
               <p class="price-hotel">От 2000 Р.</p>
               <button class="button button-brown-hotel">Забронировать</button>
             </div>
-            <div>
-              <p class="rating">** Рейтинг:9.2</p>
-            </div>
+          </div>
+          <div class="rating">
+            <div class="stars stars2">**</div>
+          <p class="rating-text">Рейтинг:9.2</p>
           </div>
         </li>
       </ul>
@@ -153,7 +164,6 @@
         </svg>
       </a>
     </section>
-  </footer>
   </footer>
   </div>
 </body>
