@@ -633,11 +633,7 @@ p.departure-date {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  color: inherit;
   margin-left: 111px;
-}
-
-.contacts p {
   text-align: center;
 }
 
@@ -941,11 +937,8 @@ display: flex;
 
 .hotel-type,
 .price-hotel {
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  margin-bottom: 15px;
-}
+   margin: 0 0 15px 0;
+  }
 
 .rating {
   margin: 0 0 0 auto;
