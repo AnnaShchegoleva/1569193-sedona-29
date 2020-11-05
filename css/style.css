@@ -849,6 +849,12 @@ label {
   margin: 0 46px 0 0;
  }
 
+.sorting-list,
+.sorting-rating {
+  margin: 0;
+  padding: 0;
+}
+
 .sorting-list li,
 .sorting-rating li {
   list-style: none;
@@ -864,6 +870,7 @@ label {
 
 .sorting-rating {
 display: flex;
+  margin-left: auto;
 }
 
 .sorting-item-price {
@@ -879,12 +886,6 @@ display: flex;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-}
-
-.sorting-list,
-.sorting-rating {
-  margin: 0;
-  padding: 0;
 }
 
 .sorting-list li:first-child {
