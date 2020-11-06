@@ -117,8 +117,7 @@ img {
   align-self: center;
 }
 
-.nav-map-menu,
-.nav-hotels-menu {
+.right-menu {
   text-align: right;
 }
 
@@ -487,13 +486,23 @@ p.departure-date {
 
 .plus,
 .minus {
-  width: 30px;
+  display: flex;
+  width: 36px;
   height: 38px;
   border: 0;
   padding: 0;
   cursor: pointer;
   outline: none;
   border: transparent;
+  box-sizing: border-box;
+}
+
+.minus > svg {
+  margin: auto;
+}
+
+.plus > svg {
+  margin: auto;
 }
 
 .button-calendar {
@@ -750,17 +759,27 @@ p.departure-date {
 /*Hotels filter search*/
 
 .filter {
-  line-height: 21px;
-  background-image: url("../img/background-filter.jpg");
-  width: 1200px;
-  height: 217px;
+  min-height: 217px;
+  padding: 0 72px;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url("../img/background-filter.jpg");
 }
 
-input[type="checkbox"] {
-  display: none;
+.filter-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--basic-white);
+}
 
+.filter-form fieldset {
+  border: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
 }
 
 label {
@@ -768,45 +787,47 @@ label {
   cursor: pointer;
 }
 
-.filter-form label::before {
+.checkbox-item {
+  margin: 0;
+  }
+
+.checkbox-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.checkbox-item:first-child {
+  margin-top: 24px;
+}
+
+input + label::before {
   position: absolute;
-  width: 23px;
+  width: 27px;
   height: 23px;
-  border: 2px solid #FFFFFF;
   top: 0;
   left: -44px;
   content: "";
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.filter-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+input:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.filter-form fieldset {
-  margin-top: 26px;
-  height: 145px;
-  border: none;
-  color: var(--basic-white);
-  font-weight: normal;
-  }
 
 .filter-infrastructure,
 .filter-houses,
 .filter-price {
   font-size: 16px;
-  display: flex;
 }
+
+
 
 .filter-attribute-title {
   font-weight: 700;
-}
-
-.filter-infrastructure {
-  margin-left: 72px;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .filter-houses {
@@ -819,10 +840,6 @@ label {
   justify-content: space-around;
 }
 /*Search results*/
-
-.search-results {
-
-}
 
 .image-wrap-hotel {
   margin-right: 29px;
