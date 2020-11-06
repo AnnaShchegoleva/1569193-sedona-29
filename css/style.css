@@ -824,8 +824,6 @@ input:checked + label::before {
   font-size: 16px;
 }
 
-
-
 .filter-attribute-title {
   font-weight: 700;
 }
@@ -848,6 +846,8 @@ input:checked + label::before {
 .image-wrap-hotel img {
   display: inline-flex;
 }
+
+
 
 .left-side {
   margin-right: 6px;
@@ -957,6 +957,15 @@ display: flex;
   margin: 0;
 }
 
+.hotel-title:hover,
+.hotel-title:focus {
+  color: var(--basic-blue);
+}
+
+.hotel-title:active {
+  color: var(--opacity-black);
+}
+
 .hotel-type,
 .price-hotel {
    margin: 0 0 15px 0;
@@ -1000,6 +1009,7 @@ display: flex;
 .button-brown-hotel:active {
   background-color: var(--basic-darkest-brown);
   color: var(--opacity-white-button);
+  border: 0;
 }
 
 /*Rating stars*/
