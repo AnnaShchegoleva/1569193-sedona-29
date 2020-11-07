@@ -817,7 +817,6 @@ input:checked + label::before {
   background-position: center;
 }
 
-
 .filter-infrastructure,
 .filter-houses,
 .filter-price {
@@ -825,7 +824,7 @@ input:checked + label::before {
 }
 
 .filter-attribute-title {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .filter-houses {
@@ -838,20 +837,6 @@ input:checked + label::before {
   justify-content: space-around;
 }
 /*Search results*/
-
-.image-wrap-hotel {
-  margin-right: 29px;
-  }
-
-.image-wrap-hotel img {
-  display: inline-flex;
-}
-
-
-
-.left-side {
-  margin-right: 6px;
-}
 
 .sorting {
   display: flex;
@@ -867,57 +852,89 @@ input:checked + label::before {
   margin: 0 46px 0 0;
  }
 
+.sorting-text {
+  margin-right: 40px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .sorting-list,
 .sorting-rating {
   margin: 0;
   padding: 0;
-}
-
-.sorting-list li,
-.sorting-rating li {
   list-style: none;
-}
-
-.arrow.down {
-  margin-left: 12px;
-}
-.sorting-text {
-  margin-right: 40px;
 }
 
 .sorting-list {
   display: flex;
+  font-size: 12px;
+  line-height: 18px;
 }
 
+.price {
+  margin-right: 32px;
+}
+
+.type {
+  margin-right: 33px;
+}
+
+.sorting-item {
+  color: var(--opacity-black);
+}
+
+.sorting-item:focus,
+.sorting-item:hover {
+  color: var(--basic-blue);
+}
+
+.sorting-item:active {
+  color: var(--basic-black);
+}
+
+.current-sorting {
+  color: var(--basic-blue)
+}
 .sorting-rating {
   display: flex;
   margin-left: auto;
 }
 
-.sorting-item-price {
- margin-right: 32px;
+.arrow.down {
+  margin-left: 12px;
 }
 
-.sorting-item-type {
-  margin-right: 33px;
+.arrow path {
+  fill: var(--basic-grey);
 }
 
-.sorting-text,
-.sorting-list li {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+.arrow:hover path,
+.arrow:focus path {
+  fill: var(--basic-black);
 }
 
-.sorting-list li:first-child {
-  color: var(--basic-blue);
+.arrow:active path {
+  fill: var(--basic-blue);
 }
 
-.sorting-list li:nth-child(n+2) {
-  color: var(--opacity-black);
+.current-arrow path {
+  fill: var(--basic-blue);
 }
 
 /*List hotels*/
+
+.image-wrap-hotel {
+  margin-right: 29px;
+}
+
+.image-wrap-hotel img {
+  display: inline-flex;
+}
+
+.left-side {
+  margin-right: 6px;
+}
+
 
 .hotels-list li {
   list-style: none;
@@ -971,9 +988,6 @@ input:checked + label::before {
    margin: 0 0 15px 0;
   }
 
-.rating {
-  margin: 0 0 0 auto;
-}
 
 /*Button hotels*/
 
@@ -1009,13 +1023,41 @@ input:checked + label::before {
 .button-brown-hotel:active {
   background-color: var(--basic-darkest-brown);
   color: var(--opacity-white-button);
-  border: 0;
 }
 
 /*Rating stars*/
 
 .rating {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rating-text {
+  padding: 3px 12px 3px 15px;
+  margin: 0;
   color: var(--basic-extra-dark-grey);
   background-color: var(--basic-light-grey);
 }
 
+.stars {
+  background-image: url("../img/star.svg");
+  background-repeat: repeat space;
+}
+
+.stars4 {
+  width: 76px;
+  height: 17px;
+}
+
+.stars3 {
+  width: 57px;
+  height: 17px;
+}
+
+.stars2 {
+  width: 39px;
+  height: 17px;
+}
