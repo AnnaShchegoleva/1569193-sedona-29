@@ -428,21 +428,6 @@ p.form-item {
   border: 2px solid transparent;
 }
 
-.arrival:focus,
-.departure:focus,
-.field-adults:focus,
-.field-children:focus {
-  background-color: var(--basic-white);
-  border: 2px solid var(--basic-grey-border);
-}
-
-.arrival:hover,
-.departure:hover,
-.field-children:hover,
-.field-adults:hover {
-  background-color: var(--basic-extra-light-grey);
-}
-
 p.arrival-date {
  position: relative;
   margin-bottom: 29px;
@@ -467,13 +452,14 @@ p.departure-date {
 .field-adults,
 .field-children {
   width: 36px;
-  height: 35px;
+  height: 38px;
   padding: 0;
   text-align: center;
   font-weight: inherit;
   background-color: var(--basic-light-grey);
   outline: none;
   border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .adults-cover,
@@ -522,8 +508,6 @@ p.departure-date {
   flex-wrap: wrap;
 }
 
-
-
 .amount-person:hover path,
 .amount-person:focus path,
 .amount-person:hover rect,
@@ -543,6 +527,25 @@ p.departure-date {
 
 .button-calendar:active path {
   fill: var(--basic-blue);
+}
+
+.arrival:focus,
+.departure:focus,
+.field-adults:focus,
+.field-children:focus,
+.minus:focus,
+.plus:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-grey-border);
+}
+
+.arrival:hover,
+.departure:hover,
+.field-children:hover,
+.field-adults:hover,
+.minus:hover,
+.plus:hover {
+  background-color: var(--basic-extra-light-grey);
 }
 
 .find { /*Кнопка Найти в popup окне*/
