@@ -615,19 +615,14 @@ p.departure-date {
 /*Map*/
 
 .map {
-  min-height: 593px;
   margin-bottom: -120px;
-}
-
-.map-object {
-  overflow: hidden;
   max-width: 100%;
   width: 1200px;
-  height: 593px;
 }
 
+
 .frame-map {
-  height: 100%;
+  min-height: 593px;
   width: 100%;
   border: 0;
 }
