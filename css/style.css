@@ -619,6 +619,20 @@ p.departure-date {
   margin-bottom: -120px;
 }
 
+.map-object {
+  overflow: hidden;
+  max-width: 100%;
+  width: 1200px;
+  height: 593px;
+}
+
+.frame-map {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+
 /*End Map*/
 
 /*footer*/
@@ -784,7 +798,7 @@ fieldset {
   padding: 0;
 }
 
-label {
+.checkbox-item label {
   position: relative;
   cursor: pointer;
   padding-left: 44px;
