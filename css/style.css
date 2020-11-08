@@ -822,6 +822,26 @@ input:checked + label::before {
   background-position: center;
 }
 
+
+input:disabled + label::before {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[checked][disabled] + label::before {
+  width: 27px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .filter-infrastructure {
   font-size: 16px;
   margin-right: 119px;
