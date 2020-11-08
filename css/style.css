@@ -1,7 +1,7 @@
 /*Variables*/
 
 :root {
-  --basic-white: #FFFFFF;
+  --basic-white: #ffffff;
   --basic-black: #000000;
   --basic-extra-dark: #333333;
   --basic-grey: #cacaca;
@@ -762,17 +762,16 @@ p.departure-date {
 /*Hotels filter search*/
 
 .filter {
-  min-height: 217px;
-  padding: 0 72px;
+  padding: 26px 72px 31px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/background-filter.jpg");
+  box-sizing: border-box;
+  background-size: cover;
 }
 
 .filter-form {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   color: var(--basic-white);
 }
 
@@ -788,26 +787,19 @@ fieldset {
 label {
   position: relative;
   cursor: pointer;
+  padding-left: 44px;
 }
 
 .checkbox-item {
-  margin: 0;
+  margin-top: 25px;
   }
-
-.checkbox-item:not(:last-child) {
-  margin-bottom: 25px;
-}
-
-.checkbox-item:first-child {
-  margin-top: 24px;
-}
 
 input + label::before {
   position: absolute;
-  width: 27px;
+  width: 23px;
   height: 23px;
   top: 0;
-  left: -44px;
+  left: 0;
   content: "";
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -815,30 +807,145 @@ input + label::before {
 }
 
 input:checked + label::before {
+  width: 27px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.filter-infrastructure,
-.filter-houses,
-.filter-price {
+.filter-infrastructure {
   font-size: 16px;
-}
-
-.filter-attribute-title {
-  font-weight: bold;
+  margin-right: 119px;
 }
 
 .filter-houses {
-  flex-direction: column;
-  justify-content: space-between;
+  font-size: 16px;
 }
 
-.filter-price {
-  margin-right: 72px;
-  justify-content: space-around;
+.checkbox-item > label {
+  font-size: 14px;
 }
+
+/*Filter price*/
+
+.filter-price {
+  font-size: 16px;
+  margin-left: auto;
+  padding: 0;
+  width: 316px;
+}
+
+.filter-attribute-title {
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
+.manage-price {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  font-size: 0;
+}
+
+.manage-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: var(--basic-white);
+  transform: translate(-50%, -50%);
+}
+
+.manage-price label {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.manage-price .min-rate,
+.manage-price .max-rate {
+  padding-left: 65px;
+  width: 90px;
+  height: 32px;
+  color: var(--basic-white);
+}
+
+.manage-price .max-rate {
+  padding-left: 56px;
+}
+
+.manage-price input {
+  width: 50px;
+  margin: 0;
+  height: 32px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.manage-range {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.manage-range .level {
+  height: 2px;
+  background: var(--opacity-white-button);
+}
+
+.manage-range .bar {
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-switch {
+  position: absolute;
+  top: -9px;
+  width: 19px;
+  height: 21px;
+  border-radius: 50%;
+  background-image: url("../img/filter-button.svg");
+  cursor: pointer;
+}
+
+.range-switch:hover,
+.range-switch:focus {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.button-show {
+  display: block;
+  margin-left: 85px;
+  min-width: 137px;
+  padding: 6px 33px;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-show:focus,
+.button-show:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+
 /*Search results*/
 
 .sorting {
