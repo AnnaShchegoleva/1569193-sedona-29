@@ -181,8 +181,9 @@ img {
 }
 
 .feature-main-wrapper {
-  padding: 52px;
+  padding-top: 44px;
   margin: 0;
+  padding-bottom: 36px;
 }
 
 p.feature-main {
@@ -194,7 +195,8 @@ p.feature-main {
 
 .feature-main-text {
   line-height: 26px;
-  margin: 52px 0 0 0;
+  margin-top: 44px;
+  color: var(--basic-extra-dark);
 }
 
 /*End of banner*/
@@ -242,11 +244,11 @@ p.feature-main {
 }
 
 h3.features-item-title {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 p.features-item-number {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 
@@ -266,7 +268,7 @@ p.features-item-number {
 
 .grey-bg {
   background-color: var(--basic-neutral);
-  padding-top: 47px;
+  padding-top: 51px;
   padding-bottom: 54px;
 }
 
@@ -282,7 +284,7 @@ p.features-item-number {
 }
 
 .town {
-  margin: 47px 51px 54px 52px;
+  margin: 51px 50px 54px 52px;
 }
 
 .features-list-addition {
@@ -301,26 +303,25 @@ p.features-item-number {
 }
 
 .list-add-item {
-    padding-top: 160px;
+    padding-top: 162px;
+}
+
+.feature-add-text {
+  color: var(--basic-extra-dark);
 }
 
 .house {
   background-image: url("../img/icon-1.png");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 50px;
-
- /* width: 75px;
-  height: 72px;
-  display: inline-block;*/
-  /*margin-top: 60px;*/
+  background-position-x: 99px;
+  background-position-y: 62px;
 }
 
 .food {
   background: url("../img/icon-2.png");
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 50px;
+  background-position-x: 110px;
+  background-position-y: 62px;
 /*  width: 75px;
   height: 70px;
   display: inline-block;*/
@@ -331,12 +332,40 @@ p.features-item-number {
   background: url("../img/icon-3.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 50px;
+  background-position-y: 55px;
   /*  width: 64px;
   height: 77px;
   display: inline-block;
   margin-top: 55px;*/
 }
+
+.list-add-item.house .feature-add-title {
+  margin-left: 8px;
+}
+
+.list-add-item.house .feature-add-text {
+  margin-left: 11px;
+  padding-top: 2px;
+}
+
+.list-add-item.food .feature-add-title {
+  margin-left: 7px;
+}
+
+.list-add-item.food .feature-add-text {
+  margin-left: 7px;
+  padding-top: 2px;
+}
+
+.list-add-item.souvenirs .feature-add-text {
+  line-height: 22px;
+}
+
+/*
+.house > .feature-add-text {
+  line-height: 22px;
+}
+*/
 
 /* End N1 */
 
@@ -358,10 +387,19 @@ p.features-item-number {
 }
 
 .bridge {
-  margin: 50px 49px 51px 50px;
+  margin: 53px 49px 51px 50px;
 }
 
 /* End n2*/
+
+.features-item.grey-bg .features-item-text {
+  color: var(--basic-extra-dark);
+}
+
+.features-item.grey-bg .features-item-number {
+  color: var(--basic-extra-dark);
+}
+
 /* End Features*/
 
 
@@ -375,16 +413,18 @@ p.features-item-number {
   line-height: 24px;
   font-weight: bold;
   margin-top: 61px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .search-hotels-info {
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
   margin-top: 0;
   text-align: center;
+  color: var(--basic-extra-dark);
  }
+
 
 p.form-item {
   position: relative;
@@ -446,7 +486,7 @@ p.departure-date {
 }
 
 .adults {
-  padding-right: 5px;
+  padding-right: 7px;
 }
 
 .field-adults,
@@ -465,9 +505,10 @@ p.departure-date {
 .adults-cover,
 .children-cover {
   margin-right: auto;
+  margin-top: 4px;
 }
 .children-cover {
-  margin-left: 46px;
+  margin-left: 50px;
 }
 
 .plus,
@@ -493,7 +534,7 @@ p.departure-date {
 
 .button-calendar {
   position: absolute;
-  right: 10px;
+  right: 6px;
   width: 26px;
   height: 26px;
   background-color: transparent;
@@ -558,6 +599,7 @@ p.departure-date {
 .button {
   font: inherit;
   text-align: center;
+  font-weight: bold;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
@@ -615,7 +657,7 @@ p.departure-date {
 /*Map*/
 
 .map {
-  margin-bottom: -120px;
+  margin-bottom: -126px;
   max-width: 100%;
   width: 1200px;
 }
@@ -966,6 +1008,7 @@ input[checked][disabled] + label::before {
   text-transform: inherit;
   background-color: transparent;
   cursor: pointer;
+  font-weight: normal;
 }
 
 .button-show:focus,
@@ -1103,6 +1146,7 @@ input[checked][disabled] + label::before {
 
 .hotel-info-title {
   width: 100%;
+  display: inline-block;
 }
 
 .hotel-title {
