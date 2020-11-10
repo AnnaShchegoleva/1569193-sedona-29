@@ -152,7 +152,7 @@ img {
 /*promo background image*/
 
 .main-wrap-background-img {
-  background-image: url(../img/background_photo.png);
+  background-image: url(../img/background-photo.png);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -1181,6 +1181,7 @@ input[type=checkbox][checked][disabled]+label {
   width: 100%;
   display: inline-block;
   margin-bottom: 4px;
+  vertical-align: middle;
 }
 
 .hotel-title {
@@ -1214,6 +1215,11 @@ input[type=checkbox][checked][disabled]+label {
   color: var(--basic-white);
   font-size: inherit;
   line-height: inherit;
+  display: flex;
+  width: 110px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-brown-hotel {
@@ -1221,6 +1227,11 @@ input[type=checkbox][checked][disabled]+label {
   color: var(--basic-white);
   font-size: inherit;
   line-height: inherit;
+  display: flex;
+  width: 142px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-blue-hotel:hover,
