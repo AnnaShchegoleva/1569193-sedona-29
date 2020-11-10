@@ -43,19 +43,6 @@ body {
   height: 100%;
 }
 
-
-/*.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-Растянем body по высоте страницы.
-
-Зададим сетку для страницы: шапка занимает высоту по своему контенту,
-как и подвал, а контентная часть занимает всё возможное пространство.
-Так добиваемся того, чтобы подвал прилип к низу страницы.*/
-
 a {
   text-decoration: none;
 }
