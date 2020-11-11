@@ -684,14 +684,12 @@ p.departure-date {
   /*width: 1200px;*/
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
-
 }
 
 .frame-map {
   min-height: 593px;
   width: 100%;
   border: 0;
-
 }
 
 
@@ -917,7 +915,7 @@ input[type=checkbox][checked][disabled]+label {
   cursor: default;
 }
 
-input[type=checkbox]:focus +label::after {
+input[type=checkbox]:focus+label::after {
   content: "";
   position: absolute;
   left: 0;
