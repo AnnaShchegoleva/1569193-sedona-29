@@ -276,7 +276,7 @@ p.features-item-number {
 
 .grey-bg {
   background-color: var(--basic-neutral);
-  padding-top: 51px;
+  padding-top: 50px;
   padding-bottom: 54px;
 }
 
@@ -434,7 +434,7 @@ p.features-item-number {
 
 .search-hotels-info {
   line-height: 24px;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   margin-top: 0;
   text-align: center;
   color: var(--basic-extra-dark);
@@ -869,7 +869,7 @@ fieldset {
 .checkbox-item label {
   position: relative;
   cursor: pointer;
-  padding-left: 44px;
+  padding-left: 43px;
 }
 
 .checkbox-item {
@@ -915,6 +915,10 @@ input[type=checkbox][checked][disabled]+label::before {
 
 input[type=checkbox][checked][disabled]+label {
   cursor: default;
+}
+
+input[type=checkbox]:focus +label {
+  border-bottom: 2px solid var(--basic-white);
 }
 
 .filter-infrastructure {
@@ -1211,7 +1215,7 @@ input[type=checkbox][checked][disabled]+label {
 .hotel-type,
 .price-hotel {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 
