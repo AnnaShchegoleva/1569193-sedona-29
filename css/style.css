@@ -459,6 +459,7 @@ p.form-item {
   position: absolute;
   transform: translateX(-50%);
   background-color: var(--basic-white);
+  z-index: 10;
 }
 
 .form-popup {
@@ -470,6 +471,10 @@ p.form-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.form-hidden {
+  display: none;
 }
 
 .arrival,
@@ -678,15 +683,18 @@ p.departure-date {
 /*Map*/
 
 .map {
-  margin-bottom: -126px;
-  max-width: 100%;
-  min-height: 600px;
-  /*width: 1200px;*/
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: -120px;
+  min-height: 593px;
+}
+.map-img {
+  display: block;
 }
 
 .frame-map {
+  position: absolute;
+  top: 0;
+  left: 0;
   min-height: 593px;
   width: 100%;
   border: 0;
@@ -1109,20 +1117,24 @@ input[type=checkbox]:focus+label::after {
   margin-right: 33px;
 }
 
-.sorting-item {
+.sorting-item a {
   color: var(--opacity-black);
 }
 
-.sorting-item:focus,
-.sorting-item:hover {
+/*.sorting-item a {
+  color: inherit;
+}*/
+
+.sorting-item a:focus,
+.sorting-item a:hover {
   color: var(--basic-blue);
 }
 
-.sorting-item:active {
+.sorting-item a:active {
   color: var(--basic-black);
 }
 
-.current-sorting {
+.sorting-item .current-sorting {
   color: var(--basic-blue)
 }
 
