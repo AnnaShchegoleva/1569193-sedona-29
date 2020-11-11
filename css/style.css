@@ -152,7 +152,7 @@ img {
 /*promo background image*/
 
 .main-wrap-background-img {
-  background-image: url(../img/background-photo.png);
+  background-color: var(--basic-blue);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -160,6 +160,7 @@ img {
   text-align: center;
   padding-top: 77px;
   box-sizing: border-box;
+  background-image: url(../img/background-photo.png);
 }
 
 .main-wrap-background-img::after {
@@ -679,13 +680,18 @@ p.departure-date {
 .map {
   margin-bottom: -126px;
   max-width: 100%;
-  width: 1200px;
+  min-height: 600px;
+  /*width: 1200px;*/
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+
 }
 
 .frame-map {
   min-height: 593px;
   width: 100%;
   border: 0;
+
 }
 
 
@@ -838,11 +844,12 @@ p.departure-date {
 
 .filter {
   padding: 26px 72px 31px;
+  background-color: var(--basic-brown);
+  box-sizing: border-box;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/background-filter.jpg");
-  box-sizing: border-box;
-  background-size: cover;
 }
 
 .filter-form {
