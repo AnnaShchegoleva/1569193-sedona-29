@@ -1,43 +1,44 @@
-# Личный проект «Седона»
+# Personal project "Sedona"
 
-* Студент: [Щеголева Анна](https://up.htmlacademy.ru/htmlcss/29/user/1569193).
-* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/id8589).
+The site of the tourist city of Sedona in Arizona. 
+Information about attractions, restaurants, gift shops is indicated. 
+It is possible to search and book a hotel.
 
----
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
+Layout standards: HTML, CSS, progressive improvement.
+Grid: Defined in layout.
+Adaptability of the string: no.
+Frameworks used: No.
+CrossBrowser: Chrome, Firefox, Safari.
 
----
-
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1569193-sedona-29) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037953-6a8a7384-7bae-11e7-83ac-59603b1d696c.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037955-6c20c16c-7bae-11e7-9e1a-c52010042976.jpg">
-
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
+The content area is centered and cannot already be layout width.
+Logo is not a menu item. It must be marked with a separate element.
+Main menu: the item "Information" is not a link to the main page.
+Main menu: four cells of the same width. For the first two points, align the text to the left, for the last two points - to the right.
+Links in the main menu: only text should be clickable.
+To the left and right of the content area there should be a gray background, on which the site casts a slight shadow.
+In three blocks of footer, the content is located in the center.
+The Academy logo in the basement leads to the intensive landing "HTML and CSS. Professional verst of sites. "
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
+Index
+Large photo: the photo covers the entire width, in its lower part there is a white mask.
+By default, the hotel search form must be open.
+The Find Hotel in Sedona button controls the display of the hotel search form. A block block with a hotel search form is required.
+The calendar icon in the date entry field must be added as a separate element so that in the future the programmer can hang a click event on it to open the calendar with the ability to select a date.
+Map block: a sufficient implementation is a regular image.
+When the JS is initialized, a class is added to the form that hides it.
+The Find Hotel in Sedona button controls the display of the hotel search form. The appearance of the form must be supplemented with an "exit" animation from top to bottom relative to the button, and not the browser window.
+Map block: an interactive map that stretches the entire width of the container. Implementation as desired.
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Профессиональная вёрстка сайтов](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+---
+
+Hotels
+
+The logo is a link to the home page.
+The main menu and footer match the main page.
+Large photo: the photo takes up the entire width, but differs from the main page - it is blurred and smaller in height.
+Filter: make up using the form, the "Show" button is responsible for sending the form to the address https://echo.htmlacademy.ru/.
+"Cost per day" block: when interacting with any of the markers, it is allowed to use any suitable type of cursor as a pointer. It is not necessary to make markers interactive, the cost should not change.
+Filter: clicking on the "Show" button sends the form.
